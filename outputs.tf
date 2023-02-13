@@ -6,7 +6,6 @@ output "terraform_version" {
 output "common_tags" {
   value = { 
     TerraformVersion = "v${data.external.terraform_version.result.version}" 
-    CreatedDate = local.current_time
     UpdatedDate = local.current_time
   }
 }
