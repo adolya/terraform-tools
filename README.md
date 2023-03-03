@@ -6,6 +6,9 @@ module "utilities" {
 }
 
 locals {
-  tags = module.utilities.common_tags
+  tags = {
+    Created          = module.utilities.timestamp
+    TerraformVersion = module.utilities.terraform_version
+  }
 }
 ```
