@@ -3,7 +3,7 @@ output "terraform_version" {
 }
 
 output "timestamp" {
-  value = data.external.timestamp.result.version
+  value = data.external.timestamp.result.current
 }
 
 
